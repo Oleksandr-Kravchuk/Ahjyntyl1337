@@ -74,3 +74,16 @@
     background-color: #888;
     box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
 }
+.stick::after {
+  content: '';
+  width: 8em;
+  height: 8em;
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-top: 25px;
+  background: #fff, repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: inset 0px -1px 2px 1px rgba(78, 77, 77, 0.9), inset 0px 2px 1px 2px rgba(243, 239, 239, 0.9);
+}
