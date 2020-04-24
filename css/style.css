@@ -78,7 +78,7 @@
 	position: relative;
 	width: 20px;
 }
-.stick:before {
+.elementB:before {
 	width: 54px;
 	height: 23px;
 	z-index: 1;
@@ -90,12 +90,12 @@
 	top: -210px;
 	left: 200px;
 }
-.stick::before{
+.elementA::before{
   content: '';
+  top: -130px;
+	left: 225px;
   display: block;
   position: absolute;
-  top: 30%;
-  right: 35%;
   transform: translate(-50%, -50%);
   background: #000;
   border-radius: 50%;
