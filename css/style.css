@@ -32,7 +32,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    background: repeating-radial-gradient(circle, darkkhaki, darkkhaki, 1px, transparent 2px, transparent 5px);
+    background: repeating-radial-gradient(circle, darkkhaki, darkkhaki, 1px, transparent 1px, transparent 5px);
     border-radius: 50%;
     margin: auto;
     opacity: .1;
@@ -43,19 +43,19 @@
 }
 
 .vinyl__logo {
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: url(../img/vinyl5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 12px solid #000;
     border-radius: 50%;
     opacity: 1;
     position: absolute;
     z-index: 1;
-    box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9), -4px -7px 6px rgba(0, 0, 0, 0.9), 9px -1px 6px rgba(0, 0, 0, 0.9), -4px 4px 6px rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,36 @@
     background-color: #888;
     box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
 }
-.stick::after {
+.stick {
+	position: relative;
+	width: 20px;
+}
+.elementA::before{
+  content: '';
+  top: -130px;
+	left: 225px;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #000;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  background: repeating-radial-gradient(rgba(220, 220, 220, 0) 23px, rgba(220, 220, 220, 0.05) 25px, rgba(220, 220, 220, 0) 27px) content-box, repeating-radial-gradient(rgba(166, 166, 166, 0) 13px, rgba(166, 166, 166, 0.05) 25px, rgba(166, 166, 166, 0) 17px) content-box, repeating-radial-gradient(rgba(139, 139, 139, 0) 19px, rgba(139, 139, 139, 0.05) 21px, rgba(139, 139, 139, 0) 23px) content-box, conic-gradient(#cdcdcd, #9d9d9d, #808080, #bcbcbc, #c4c4c4, #e6e6e6, #dddddd, #a1a1a1, #7f7f7f, #8b8b8b, #bfbfbf, #e3e3e3, #d2d2d2, #a6a6a6, #858585, #8d8d8d, #c0c0c0, #e5e5e5, #d6d6d6, #9e9e9e, #828282, #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd) content-box;
+}
+.elementB:before {
+	width: 54px;
+	height: 23px;
+	z-index: 1;
+	display: block;
+	background: rgb(173,173,173);
+	background: linear-gradient(90deg, rgba(173,173,173,1) 0%, rgba(249,249,249,1) 25%, rgba(249,249,249,1) 50%, rgba(249,249,249,1) 75%, rgba(173,173,173,1) 100%);
+	position: absolute;
+	content: " ";
+	top: -210px;
+	left: 200px;
+}
+.elementC::before {
   content: '';
   width: 8em;
   height: 8em;
