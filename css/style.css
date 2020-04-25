@@ -135,7 +135,7 @@ body {
         inset rgba(255, 255, 255, 0.5) 0 1px 1px 4px,/* top HL */
         rgba(0, 0, 0, .5) 0 0 9px 3px;
     border-radius: 50%;
-    background: repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 5%), 
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 5%),
     -webkit-radial-gradient(50% 50%, 200% 50%, rgb(209, 209, 209) 5%, rgb(182, 181, 181) 30%, rgb(163, 163, 162) 100%);
 }
 
@@ -184,45 +184,18 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     }
 }
 
-.elementC::after {
-    content: '';
-    left: 115px;
-    top: 55px;
-    position: absolute;
-    display: block;
-    transform: translate(-50%, -50%);
-    background: #000;
-    border-radius: 50%;
-    width: 8em;
-    height: 8em;
-    z-index: -1;
-
-    background: #fff repeating-conic-gradient(
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2),
-  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg,
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
-  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7),
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7),
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
-
-}
-
 .elementC::before {
     content: '';
     width: 132px;
     height: 132px;
-    position: absolute !important;
+    position: absolute;
     top: -14px;
     left: 47px;
     background: #eee repeating-conic-gradient( rgba(212, 212, 212, 0.4), rgba(12, 12, 12, 0.17),
     rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.4), rgba(212, 212, 212, 0.4),
     rgba(12, 12, 12, 0.17), rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.1) 72deg,
     rgba(12, 12, 12, 0.1) 92deg, rgba(212, 212, 212, 0.1), rgba(12, 12, 12, 0.2),
-    rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.4), rgba(212, 212, 212, 0.4), 
+    rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.4), rgba(212, 212, 212, 0.4),
     rgba(12, 12, 12, 0.17), rgba(12, 12, 12, 0.17), rgba(212, 212, 212, 0.4),
     rgba(212, 212, 212, 0.4), rgba(12, 12, 12, 0.17), rgba(12, 12, 12, 0.17),
     rgba(212, 212, 212, 0.4), rgba(212, 212, 212, 0.4), rgba(12, 12, 12, 0.17),
