@@ -5,7 +5,7 @@
         url('../fonts/Glyphter.woff') format('woff'),
         url('../fonts/Glyphter.ttf') format('truetype'),
         url('../fonts/Glyphter.svg#Glyphter') format('svg');
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -99,25 +99,25 @@ body {
 }
 
 .play-btn {
-    padding: 20px;
+    padding: 20px 20px 20px 24px;
     display: block;
     position: absolute;
     font-family: 'icons-font';
     bottom: 25px;
     right: 25px;
     font-size: 1.2em;
-    font-weight: bold;
-    color: hsla(0, 0%, 20%, 1);
+    font-weight: 1000;
+    color: rgb(51, 51, 51);
+    text-shadow: 0 0 2px;
     background-color: rgb(230, 230, 230);
-    box-shadow: inset rgb(38, 38, 38) 0 0px 0px 4px, /* border */
-        inset hsla(0, 0%, 15%, 0.8) 0 0 5px 4px, /* soft SD */
-        inset rgba(0, 0, 0, 0.25) 0 0 0px 8px,  /* bottom SD */
-        inset rgba(255, 255, 255, 0.7) 0 0 1px 7px,  /* top HL */
-        rgba(0, 0, 0, .5) 0 0 5px 0; /* outer HL */
+    box-shadow: rgb(38, 38, 38) 0 0px 0px 3px, /* border */
+        inset rgba(179, 179, 179, 0.8) 0 0 3px 1px, /* soft SD */
+        inset rgba(0, 0, 0, 0.5) 0 -1px 2px 2px, /* bottom SD */
+        inset rgba(255, 255, 255, 0.5) 0 1px 1px 4px,/* top HL */
+        rgba(0, 0, 0, .5) 0 0 9px 3px;
     border-radius: 50%;
-    background: repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 5%),
-        -webkit-radial-gradient(50% 50%, 200% 50%, rgb(209, 209, 209) 5%, rgb(182, 181, 181) 30%, rgb(163, 163, 163) 100%);
-
+    background: repeating-radial-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 5%), 
+    -webkit-radial-gradient(50% 50%, 200% 50%, rgb(209, 209, 209) 5%, rgb(182, 181, 181) 30%, rgb(163, 163, 162) 100%);
 }
 
 .play-btn::before,
@@ -140,28 +140,30 @@ body {
 .play-btn::after {
     transform: rotate(60deg);
 }
+
 .stick {
-	position: relative;
-	width: 20px;
+    position: relative;
+    width: 20px;
 }
 
-input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
+input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     animation-name: turn_logo;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-delay: 3s;
 
-} 
+}
 
-@keyframes turn_logo{
+@keyframes turn_logo {
     from {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-    transform : rotate(360deg);
+        transform: rotate(360deg);
     }
-} 
+}
 
 .elementC::after {
     content: '';
@@ -175,17 +177,16 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     width: 8em;
     height: 8em;
     z-index: -1;
-    background: #fff repeating-conic-gradient(
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
-  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+    background: #fff repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2),
+            rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg,
+            rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7),
+            rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7),
+            rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
 
 }
 
@@ -197,35 +198,34 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     z-index: -1;
     top: -14px;
     left: 47px;
-    background: #fff repeating-conic-gradient(
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
-  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+    background: #fff repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2),
+            rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg,
+            rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+            rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7),
+            rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7),
+            rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
     border-radius: 50%;
     border: 2px solid black;
     box-shadow: inset 0px -1px 2px 1px rgba(78, 77, 77, 0.9), inset 0px 2px 1px 2px rgba(243, 239, 239, 0.9);
 }
 
 .elementB:before {
-	width: 54px;
+    width: 54px;
     height: 23px;
-	display: block;
-	background: rgb(173,173,173);
-	background: linear-gradient(90deg, rgba(173,173,173,1) 0%, rgba(249,249,249,1) 25%, rgba(249,249,249,1) 50%, rgba(249,249,249,1) 75%, rgba(173,173,173,1) 100%);
+    display: block;
+    background: rgb(173, 173, 173);
+    background: linear-gradient(90deg, rgba(173, 173, 173, 1) 0%, rgba(249, 249, 249, 1) 25%, rgba(249, 249, 249, 1) 50%, rgba(249, 249, 249, 1) 75%, rgba(173, 173, 173, 1) 100%);
     content: " ";
     position: absolute;
-	top: 10px;
-	left: 200px;
+    top: 10px;
+    left: 200px;
 }
 
-.elementA::before{
+.elementA::before {
     content: '';
     top: -130px;
     left: 225px;
@@ -240,28 +240,29 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
 }
 
 .element1 {
-    box-sizing: border-box;	    
-    transform: rotate(-64deg); /* положение до анимации */
+    box-sizing: border-box;
+    transform: rotate(-64deg);
+    /* положение до анимации */
     /*transform: rotate(-44deg); /* положение в момент анимации */
-}	    
+}
 
 .top {
     background-color: #383838;
     width: 70px;
     height: 7.5px;
     border-top: 4px solid #212121;
-}	  
+}
 
 .center {
     width: 70px;
     height: 2px;
     box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
     background-color: white;
-}	 
+}
 
 .bottom {
     background-color: #383838;
-   	width: 70px;
+    width: 70px;
     height: 7.5px;
     border-bottom: 4px solid #212121;
 }
