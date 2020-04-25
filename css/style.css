@@ -15,6 +15,9 @@
     background-position: center center;
     border-radius: 5px;
     box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .vinyl__disk {
@@ -22,9 +25,12 @@
     height: 80%;
     background: #000;
     border-radius: 50%;
-    margin: 50px;
+    margin: 40px 150px 30px 30px;
     box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9), -4px 4px 6px rgba(0, 0, 0, 0.9);
     position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
 }
 
 .vinyl__disk::before {
@@ -45,74 +51,154 @@
 .vinyl__logo {
     width: 170px;
     height: 170px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-image: url(../img/vinyl5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border: 12px solid #000;
     border-radius: 50%;
     opacity: 1;
-    position: absolute;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 110px;
+    margin-left: 25px;
+
 }
 
 .vinyl__logo::before {
     content: '';
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #888;
-    box-shadow: 4px 7px 6px rgba(0, 0, 0, 0.9);
+    box-shadow: -2px 2px 4px 0px rgba(221, 221, 221, 1) inset,
+    -2px 2px 2px 0px rgba(0, 0, 0, .8);
 }
 .stick {
 	position: relative;
 	width: 20px;
 }
-.elementA::before{
-  content: '';
-  top: -130px;
-	left: 225px;
-  display: block;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: #000;
-  border-radius: 50%;
-  width: 4em;
-  height: 4em;
-  background: repeating-radial-gradient(rgba(220, 220, 220, 0) 23px, rgba(220, 220, 220, 0.05) 25px, rgba(220, 220, 220, 0) 27px) content-box, repeating-radial-gradient(rgba(166, 166, 166, 0) 13px, rgba(166, 166, 166, 0.05) 25px, rgba(166, 166, 166, 0) 17px) content-box, repeating-radial-gradient(rgba(139, 139, 139, 0) 19px, rgba(139, 139, 139, 0.05) 21px, rgba(139, 139, 139, 0) 23px) content-box, conic-gradient(#cdcdcd, #9d9d9d, #808080, #bcbcbc, #c4c4c4, #e6e6e6, #dddddd, #a1a1a1, #7f7f7f, #8b8b8b, #bfbfbf, #e3e3e3, #d2d2d2, #a6a6a6, #858585, #8d8d8d, #c0c0c0, #e5e5e5, #d6d6d6, #9e9e9e, #828282, #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd) content-box;
+
+input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
+    animation-name: turn_logo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+
+} 
+
+@keyframes turn_logo{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform : rotate(360deg);
+    }
+} 
+
+.elementC::after {
+    content: '';
+    left: 115px;
+    top: 55px;
+    position: absolute;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    z-index: -1;
+    background: #fff repeating-conic-gradient(
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
+  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+
 }
+
+.elementC::before {
+    content: '';
+    width: 132px;
+    height: 132px;
+    position: absolute !important;
+    z-index: -1;
+    top: -14px;
+    left: 47px;
+    background: #fff repeating-conic-gradient(
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
+  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
+  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: inset 0px -1px 2px 1px rgba(78, 77, 77, 0.9), inset 0px 2px 1px 2px rgba(243, 239, 239, 0.9);
+}
+
 .elementB:before {
 	width: 54px;
-	height: 23px;
-	z-index: 1;
+    height: 23px;
 	display: block;
 	background: rgb(173,173,173);
 	background: linear-gradient(90deg, rgba(173,173,173,1) 0%, rgba(249,249,249,1) 25%, rgba(249,249,249,1) 50%, rgba(249,249,249,1) 75%, rgba(173,173,173,1) 100%);
-	position: absolute;
-	content: " ";
-	top: -210px;
+    content: " ";
+    position: absolute;
+	top: 10px;
 	left: 200px;
 }
-.elementC::before {
-  content: '';
-  width: 8em;
-  height: 8em;
-  display: block;
-  position: absolute;
-  top: 0;
-  margin-top: 25px;
-  background: #fff repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
-  border-radius: 50%;
-  border: 2px solid black;
-  box-shadow: inset 0px -1px 2px 1px rgba(78, 77, 77, 0.9), inset 0px 2px 1px 2px rgba(243, 239, 239, 0.9);
+
+.elementA::before{
+    content: '';
+    top: -130px;
+    left: 225px;
+    display: block;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background: #fff repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
+
+}
+
+.element1 {
+    box-sizing: border-box;	    
+    transform: rotate(-64deg); /* положение до анимации */
+    /*transform: rotate(-44deg); /* положение в момент анимации */
+}	    
+
+.top {
+    background-color: #383838;
+    width: 70px;
+    height: 7.5px;
+    border-top: 4px solid #212121;
+}	  
+
+.center {
+    width: 70px;
+    height: 2px;
+    box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
+    background-color: white;
+}	 
+
+.bottom {
+    background-color: #383838;
+   	width: 70px;
+    height: 7.5px;
+    border-bottom: 4px solid #212121;
 }
