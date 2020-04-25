@@ -257,11 +257,12 @@ input[type="checkbox"]:checked~.vinyl__disk .vinyl__logo {
     transform: translate(-50%, -50%);
     background: #000;
     border-radius: 50%;
-    width: 4.5em;
-    height: 4.5em;
-    border: 0.016px solid #000;
-    background: repeating-radial-gradient(rgba(220, 220, 220, 0) 23px, rgba(220, 220, 220, 0.05) 25px, rgba(220, 220, 220, 0) 27px) content-box, repeating-radial-gradient(rgba(166, 166, 166, 0) 13px, rgba(166, 166, 166, 0.05) 25px, rgba(166, 166, 166, 0) 17px) content-box, repeating-radial-gradient(rgba(178, 178, 178, 0) 19px, rgba(178, 178, 178, 0.05) 21px, rgba(178, 178, 178, 0) 23px) content-box, conic-gradient(#cdcdcd, #9d9d9d, #808080, #bcbcbc, #c4c4c4, #e6e6e6, #dddddd, #a1a1a1, #8C8C8C, #8b8b8b, #bfbfbf, #e3e3e3, #d2d2d2, #a6a6a6, #8C8C8C, #8d8d8d, #c0c0c0, #e5e5e5, #d6d6d6, #A5A5A5, #999999, #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd) content-box;
-box-shadow: 3px 10px 24px -1px rgba(0,0,0,0.39);
+    width: 4em;
+    height: 4em;
+    border: 1px solid #7F7F7F;
+    background: repeating-radial-gradient(rgba(216, 216, 216, 0) 23px, rgba(216, 216, 216, 0.05) 25px, rgba(216, 216, 216, 0) 27px) content-box, repeating-radial-gradient(rgba(191, 191, 191, 0) 13px, rgba(191, 191, 191, 0.05) 25px, rgba(191, 191, 191, 0) 17px) content-box, repeating-radial-gradient(rgba(178, 178, 178, 0) 19px, rgba(178, 178, 178, 0.05) 21px, rgba(178, 178, 178, 0) 23px) content-box, conic-gradient(#D8D8D8, #BFBFBF, #E5E5E5, #D8D8D8, #c4c4c4, #e6e6e6, #E5E5E5, #BFBFBF, #E5E5E5, #BFBFBF, #E5E5E5, #e3e3e3, #BFBFBF, #B2B2B2, #E5E5E5, #CCCCCC, #c0c0c0, #e5e5e5, #E5E5E5, #CCCCCC, #E5E5E5, #BFBFBF, #CCCCCC, #E5E5E5, #D8D8D8) content-box;
+    box-shadow: -3px 5px 15px 0px #000000;
+
 }
 
 .element1 {
