@@ -89,7 +89,7 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     animation-iteration-count: infinite;
     animation-delay: 3s;
 
-} 
+}
 
 @keyframes turn_logo{
     from {
@@ -98,7 +98,7 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     to {
     transform : rotate(360deg);
     }
-} 
+}
 
 .elementC::after {
     content: '';
@@ -113,15 +113,15 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     height: 8em;
     z-index: -1;
     background: #fff repeating-conic-gradient(
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
-  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2),
+  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg,
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7),
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7),
   rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
 
 }
@@ -131,23 +131,22 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
     width: 132px;
     height: 132px;
     position: absolute !important;
-    z-index: -1;
     top: -14px;
     left: 47px;
     background: #fff repeating-conic-gradient(
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), 
-  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, 
-  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), 
-  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), 
-  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), 
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2),
+  rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg,
+  rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2),
+  rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7),
+  rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7),
   rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
     border-radius: 50%;
-    border: 2px solid black;
-    box-shadow: inset 0px -1px 2px 1px rgba(78, 77, 77, 0.9), inset 0px 2px 1px 2px rgba(243, 239, 239, 0.9);
+    border: 1.5px solid black;
+box-shadow: -6px 8px 25px 10px rgba(0,0,0,0.39);
 }
 
 .elementB:before {
@@ -164,37 +163,40 @@ input[type="checkbox"]:checked ~ .vinyl__disk .vinyl__logo{
 
 .elementA::before{
     content: '';
-    top: -130px;
-    left: 225px;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 115px;
     display: block;
     transform: translate(-50%, -50%);
     background: #000;
     border-radius: 50%;
-    width: 4em;
-    height: 4em;
-    background: #fff repeating-conic-gradient(rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7) 72deg, rgba(12, 12, 12, 0.1) 92deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), 270deg, rgba(12, 12, 12, 0.1) 278deg, rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7), rgba(212, 212, 212, 0.7), rgba(12, 12, 12, 0.2), rgba(12, 12, 12, 0.2), rgba(212, 212, 212, 0.7));
-
+    width: 4.5em;
+    height: 4.5em;
+    border: 0.016px solid #000;
+    background: repeating-radial-gradient(rgba(220, 220, 220, 0) 23px, rgba(220, 220, 220, 0.05) 25px, rgba(220, 220, 220, 0) 27px) content-box, repeating-radial-gradient(rgba(166, 166, 166, 0) 13px, rgba(166, 166, 166, 0.05) 25px, rgba(166, 166, 166, 0) 17px) content-box, repeating-radial-gradient(rgba(178, 178, 178, 0) 19px, rgba(178, 178, 178, 0.05) 21px, rgba(178, 178, 178, 0) 23px) content-box, conic-gradient(#cdcdcd, #9d9d9d, #808080, #bcbcbc, #c4c4c4, #e6e6e6, #dddddd, #a1a1a1, #8C8C8C, #8b8b8b, #bfbfbf, #e3e3e3, #d2d2d2, #a6a6a6, #8C8C8C, #8d8d8d, #c0c0c0, #e5e5e5, #d6d6d6, #A5A5A5, #999999, #8f8f8f, #bdbdbd, #e3e3e3, #cdcdcd) content-box;
+box-shadow: 3px 10px 24px -1px rgba(0,0,0,0.39);
 }
 
 .element1 {
-    box-sizing: border-box;	    
+    box-sizing: border-box;
     transform: rotate(-64deg); /* положение до анимации */
     /*transform: rotate(-44deg); /* положение в момент анимации */
-}	    
+}
 
 .top {
     background-color: #383838;
     width: 70px;
     height: 7.5px;
     border-top: 4px solid #212121;
-}	  
+}
 
 .center {
     width: 70px;
     height: 2px;
     box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.9), -4px 4px 10px rgba(0, 0, 0, 0.9);
     background-color: white;
-}	 
+}
 
 .bottom {
     background-color: #383838;
